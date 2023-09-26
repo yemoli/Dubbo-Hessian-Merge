@@ -79,7 +79,7 @@ public class FastJson2ObjectInput implements ObjectInput {
 
     @Override
     public String readUTF() throws IOException {
-        return readObject(String.class);
+        return is.readObject(String.class);
     }
 
     @Override
